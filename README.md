@@ -1,6 +1,6 @@
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):**Hoang Dieu Linh Nguyen
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -60,4 +60,4 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
   + For binary search? **TODO: your answer goes here**
-  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**  
