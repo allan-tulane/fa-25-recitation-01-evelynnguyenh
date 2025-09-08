@@ -78,23 +78,16 @@ def time_search(search_fn, mylist, key):
 	###
 
 def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
-	res = []
-	for n in sizes:
-		n_int = int(n)
-		arr = list(range(n_int))
-		key = -1
-		linear_search_time = time_search(linear_search, arr, key)
-		binary_search_time = time_search(binary_search, arr, key)
-		res.append((n_int, linear_search_time, binary_search_time))
-
-		arr = list(range(n))
-		key = -1
-		linear_search_time = time_search(linear_search, arr, key)
-		binary_search_time = time_search(binary_search, arr, key)
-		res.append((n, linear_search_time, binary_search_time))
-
-	return res
-	"""
+    res = []
+    for n in sizes:
+        n_int = int(n)  
+        arr = list(range(n_int))
+        key = -1
+        linear_search_time = time_search(linear_search, arr, key)
+        binary_search_time = time_search(binary_search, arr, key)
+        res.append((n_int, linear_search_time, binary_search_time))
+    return res
+"""
 	Compare the running time of linear_search and binary_search
 	for input sizes as given. The key for each search should be
 	-1. The list to search for each size contains the numbers from 0 to n-1,
