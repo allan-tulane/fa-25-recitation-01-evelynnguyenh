@@ -86,6 +86,13 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 		linear_search_time = time_search(linear_search, arr, key)
 		binary_search_time = time_search(binary_search, arr, key)
 		res.append((n_int, linear_search_time, binary_search_time))
+
+		arr = list(range(n))
+		key = -1
+		linear_search_time = time_search(linear_search, arr, key)
+		binary_search_time = time_search(binary_search, arr, key)
+		res.append((n, linear_search_time, binary_search_time))
+
 	return res
 	"""
 	Compare the running time of linear_search and binary_search
